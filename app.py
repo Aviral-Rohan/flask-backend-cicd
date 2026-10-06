@@ -28,7 +28,7 @@ def submit():
         "email": email,
         "received_at": datetime.now(timezone.utc).isoformat(),
     }
-    return jsonify({"message": f"Hello {name}, your data was received by the Flask backend!",
+    return jsonify({"message": f"Hello {name}, your data was received by the Flask backend (deployed by Jenkins)!",
                     "data": record}), 201
 
 
